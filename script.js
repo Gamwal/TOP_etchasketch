@@ -6,11 +6,11 @@ function createPiece(n) {
   piece.id = `piece_${n}`;
   piece.className = 'piece';
 
-  let transparency = 100
+  let transparency = 0;
   piece.style.backgroundColor = `rgb(0, 0, 0, ${transparency}%)`;
 
-  piece.addEventListener('mouseover', (e) => {
-    transparency -= 10;
+  piece.addEventListener('mousemove', (e) => {
+    transparency += 10;
     piece.style.backgroundColor = `rgb(0, 0, 0, ${transparency}%)`;
     console.log
   });

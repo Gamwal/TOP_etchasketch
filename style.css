@@ -7,7 +7,7 @@ body {
 #board {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  background-color: rgb(216, 241, 241);
   width: 650px;
   height: 650px;
   gap: 1px;
